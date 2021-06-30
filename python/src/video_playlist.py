@@ -18,6 +18,10 @@ class Playlist:
         """Returns the videos in the playlist."""
         return self._videos
 
+    def get_videos(self):
+        """Returns all available video information from the playlist."""
+        return list(self._videos.values())
+
     def get_video(self, video_id):
         """Returns the video object (title, url, tags) from the playlist.
 
